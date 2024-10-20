@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #6c1d89;
+  background: linen;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* index.html에만 적용할 스타일 */
+.index-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('img/노트북.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.content-wrapper {
+  display: flex;
+}
+
+.content-wrapper h1 {
+  color: white;
+  font-size: 35px;
+}
+
+.main {
+  color: rgb(193, 69, 24);
+  line-height: 2.5;
+}
+
+.navbar {
+  background-color: rgb(241, 147, 6);
+  color: #fff;
+  height: 60px;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+  color: #ddd;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px 10px;
+  font-size: large;
+  font-weight: bold;
+  color: rgb(172, 61, 6);
+  background-color: rgb(255, 216, 132);
+  border-radius: 10px;
+  border-width: 0px;
+}
+
+button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(238, 151, 22);
+}
