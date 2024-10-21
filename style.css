@@ -7,7 +7,6 @@
 body {
   font-size: 16px;
   line-height: 1.5;
-  color: #6c1d89;
   background: linen;
 }
 
@@ -27,7 +26,7 @@ ul {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url('img/노트북.jpeg');
+  background-image: url('img/손수정.png');
   background-size: cover;
   background-position: center;
 }
@@ -37,18 +36,45 @@ ul {
 }
 
 .content-wrapper h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 35px;
 }
 
+/* 동그라미 */
+.circle {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: rgb(228, 143, 122);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 70px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.circle video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.circle:hover video {
+  display: block;
+}
+
 .main {
-  color: rgb(193, 69, 24);
+  color: rgba(88, 27, 19, 0.852);
   line-height: 2.5;
 }
 
 .navbar {
-  background-color: rgb(241, 147, 6);
-  color: #fff;
+  background-color: rgb(245, 199, 186);
+  color: #db7d7d;
   height: 60px;
 }
 
@@ -75,7 +101,7 @@ ul {
 }
 
 .navbar a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
@@ -83,7 +109,7 @@ ul {
 
 .navbar a:hover {
   border-bottom: 2px #fff solid;
-  color: #ddd;
+  color: #db8888;
 }
 
 button {
@@ -91,13 +117,13 @@ button {
   margin: 10px 10px;
   font-size: large;
   font-weight: bold;
-  color: rgb(172, 61, 6);
-  background-color: rgb(255, 216, 132);
+  color: rgb(65, 27, 8);
+  background-color: rgb(244, 188, 164);
   border-radius: 10px;
   border-width: 0px;
 }
 
 button:hover {
-  color: rgb(255, 255, 255);
-  background-color: rgb(238, 151, 22);
+  color: rgb(247, 173, 173);
+  background-color: rgb(97, 48, 6);
 }

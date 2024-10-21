@@ -1,14 +1,30 @@
 document.getElementById('time').innerHTML = new Date().toLocaleString()
 
-function pink() {
-  document.body.style.backgroundColor = 'pink'
+// 동그라미 속 영상
+function showVideo() {
+  var video = document.getElementById('circle-video')
+  video.style.display = 'block'
+  video.play()
 }
-function lightblue() {
-  document.body.style.backgroundColor = 'lightblue'
+
+function hideVideo() {
+  var video = document.getElementById('circle-video')
+  video.style.display = 'none'
+  video.pause()
 }
-function lightyellow() {
-  document.body.style.backgroundColor = 'lightyellow'
+
+function showGoal() {
+  document.getElementById('goal-text').style.display = 'block'
 }
-function reset() {
-  document.body.style.backgroundColor = 'white'
+
+function hideGoal() {
+  document.getElementById('goal-text').style.display = 'none'
+}
+
+function showFuntion() {
+  document.getElementById('funtion-text').style.display = 'block'
+}
+
+function hideFuntion() {
+  document.getElementById('funtion-text').style.display = 'none'
 }
